@@ -1,24 +1,21 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+country: "au"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+humandate: "July 20-21, 27-28, August 3-4, 10-11 2020"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "12:30 pm - 2 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2020-07-20      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2020-08-11        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Darya Vanichkina", "Brian Ballsun-Stanton"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: []     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["darya.vanichkina@sydney.edu.au",brian.ballsun-stanton@mq.edu.au"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad:             # optional: URL for the workshop Etherpad if there is one
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+eventbrite:           # 112144314664: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
   - venue: "Online"
-    address: "https://carpentries.zoom.us/j/FIXME"
+    address: "URL will be emailed"
 
-  - venue: "Euphoria University"
-    address: "Room A, 123 Forth Street, Blimingen, Euphoria"
-    latlng: "41.7901128,-87.6007318"
 
 ---
 
@@ -111,7 +108,7 @@ locations:
 
 {% if online == "online" %}
 
-This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. The link to use for this event is <{{ loc.address }}>.
+This is an online event. We will meet using the online videoconference software Zoom. You will need to <a href="https://zoom.us/download">download and install their client</a> to connect with your instructors. You will be emailed the connection URL.
 
 {% else %}
 {% assign inperson = "true" %}
@@ -123,36 +120,19 @@ This is an online event. We will meet using the online videoconference software 
 {% endif %}
 {% endfor %}
 
-{% if inperson == "true" %}
+
 
 <h4 id="accessibility">Accessibility</h4>
 
 We are committed to making this workshop
-accessible to everybody.
-The workshop organisers have checked that:
+accessible to everybody. Contact us if you anticipate any issues with using zoom and various web applications for an hour and a half, two days a week, for four weeks.
 
-<ul>
-  <li>The room is wheelchair / scooter accessible.</li>
-  <li>Accessible restrooms are available.</li>
-</ul>
+We will be recording each other teaching.
 
-Materials will be provided in advance of the workshop and
-large-print handouts are available if needed by notifying the
-organizers in advance.  If we can help making learning easier for
-you (e.g. sign-language interpreters, lactation facilities) please
-please get in touch (using contact details below) and we will
-attempt to provide them.
-
-{% endif %}
 
 <h3>Requirements</h3>
 
-Participants should bring a laptop that is Internet connected and has a
-functioning browser. If you have it, a device for recording audio and video
-(mobile phones and laptops are OK) is useful as throughout the two days, we
-are going to record one another teaching in pairs or threes. It does not have
-to be high-quality, but it should be good enough that you can understand what
-someone is saying.
+Participants should attend with a stable internet connection, and preferably two screens -- so that the notes and videos may both be displayed at the same time. Participants may wish to use a secondary phone or tablet for this purpose. Participants also *must* have a webcam.
 
 Please note that after this course is over, you will be asked to do
 three short follow-up exercises online in order to finish qualifying
@@ -218,7 +198,7 @@ for more information.
 <h2 id="materials" name="materials">Training Materials and Schedule</h2>
 
 <p>
-  Please see <a href="{{ site.training_site }}">this site</a> for course material and tentative schedule.
+  Please see <a href="{{ site.training_site }}">this site</a> for course material. The schedule will be significantly altered to fit the eight-session format, and will be announced at the start of the course.
 </p>
 
 
